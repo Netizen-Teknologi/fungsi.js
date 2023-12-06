@@ -63,7 +63,7 @@ function generateRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-export const getCurrentDateTimeUTC = () => {
+const getCurrentDateTimeUTC = () => {
   const currentDateTime = new Date(); // Mendapatkan tanggal dan waktu saat ini
   const currentDateTimeUTC = currentDateTime.toISOString(); // Mengonversi ke format UTC
 
