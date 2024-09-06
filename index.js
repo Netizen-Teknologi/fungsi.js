@@ -4,7 +4,10 @@
  * pertimbangan khusus yang perlu diperhatikan.
  */
  
-
+const normalizeFontSize = (size) => {
+  const screenWidth = width < height ? width : height;
+  return Math.round((size * screenWidth) / 375); // 375 adalah ukuran lebar layar iPhone 6/7/8
+};
 
    /**
  * Mengembalikan tanggal dalam format yang telah diformat.
